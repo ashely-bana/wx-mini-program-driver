@@ -1,0 +1,49 @@
+/* pages/register/register.wxss */
+.header {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #FFC125;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.register-item {
+  width: 300px;
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid #515151;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+.register-item image {
+  width: 24px;
+  height: 24px;
+  margin: 4px 10px;
+}
+.register-item input, .register-item .picker {
+  width: 254px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+}
+.btn {
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: #515151;
+}

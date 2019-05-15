@@ -1,0 +1,31 @@
+<!--pages/finish/finish.wxml-->
+<view class="container">
+  <view class="header">已送达</view>
+  <view class="outer-wrap">
+    <view class='service-list-wrapper'>
+    <view class="service-no-data" wx:if="{{serviceList.length == 0}}">
+      没有数据
+      </view>
+      <view class="service-list" wx:for="{{serviceList}}" wx:key="id">
+          <view class="service-item first">
+            <text class='item-first'>团长：{{item.groupLeaderName}}</text>
+            <text>线路：{{item.routeName}}</text>
+          </view>
+          <view class="service-item">
+            <text class='item-first'>送达时间：{{item.deliveryDate}}</text>
+            <text>商品：{{item.goodCount}}</text>
+          </view>
+          <view class="service-item">
+            <text class='item-first'>交接批次：{{item.deliveryNo}}</text>
+            <view><image src='/images/tel.png' data-mobile="{{item.groupLeaderPhone}}" catchtap="callUp"></image>{{item.groupLeaderPhone}}</view>
+          </view>
+          <view class="service-item">
+            <text>{{item.address}}</text>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>Powered by 初家心选</text>
+    </view>
+  </view>

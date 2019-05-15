@@ -1,0 +1,174 @@
+/* pages/collect/collect.wxss */
+.header {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #FFC125;
+  font-size: 40rpx;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.register-item {
+  width: 300px;
+  height: 32px;
+  position: absolute;
+  top: 80rpx;
+  border-radius: 20px;
+  border: 1px solid #515151;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+.register-item image {
+  width: 24px;
+  height: 24px;
+  margin: 4px 10px;
+}
+.register-item input {
+  margin-left: 12px;
+  width: 242px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+}
+.outer-wrap {
+  width: 100%;
+  position: absolute;
+  top: 170rpx;
+  padding-bottom: 180rpx;
+}
+.collect-no-data {
+  text-align: center;
+  font-size: 32rpx;
+  color: #BEBEBE;
+  line-height: 700rpx;
+}
+.collect-list {
+  height: auto;
+  margin: 20rpx auto 0;
+  display: flex;
+  flex-direction: column;
+}
+.collect-item {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #515151;
+  font-size: 28rpx;
+  padding: 6rpx 20rpx;
+}
+.collect-item .service-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 64rpx;
+  
+}
+.collect-item .service-item .item-first {
+  padding-right: 100rpx;
+}
+.collect-item .service-item image {
+  width: 48rpx;
+  height: 48rpx;
+  vertical-align: bottom;
+}
+.collect-item .service-item.first {
+  width: 100%;
+  justify-content: space-between;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.collect-detail {
+  border-top: 1px solid #515151;
+  border-left: 1px solid #515151;
+}
+.collect-detail-item {
+  display: flex;
+  flex-direction: row;
+}
+.collect-detail-item view{
+  font-size: 28rpx;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #515151;
+  border-bottom: 1px solid #515151;
+}
+.collect-detail-item view.th{
+  font-weight: bold;
+  padding: 10rpx 0;
+}
+.collect-detail-item view.td{
+  vertical-align: middle;
+}
+.collect-detail-item view.large{
+  flex: 4;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background: #fff;
+  padding-top: 20rpx; 
+  line-height: 80rpx;
+  border-top: 1px solid #f2f2f2;
+}
+.footer text {
+  width: 100%;
+  font-size: 24rpx;
+  color: #515151;
+}
+.footer .btn {
+  width: 280rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+.dialog {
+  width: 560rpx;
+  height: 300rpx;
+  background: #fff;
+  border: 1px solid #515151;
+  padding: 30rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150rpx;
+  margin-left: -310rpx;
+  display: none;
+}
+.dialog .title {
+  font-size: 32rpx;
+  line-height: 80rpx;
+}
+.dialog .input-view {
+  overflow: hidden;
+}
+.dialog input {
+  width: 90rpx;
+  text-align: center;
+  float: left;
+  margin-right: 20rpx;
+  border-bottom: 1px solid #515151; 
+}
+.dialog .dialog-footer {
+  width: 100%;
+  text-align: right;
+  margin-top: 60rpx;
+} 
+.dialog .dialog-footer .btn {
+  width: 180rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  float: right;
+  margin-right: 40rpx; 
+}

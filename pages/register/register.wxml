@@ -1,0 +1,33 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <view class='header'>注册/修改</view>
+  <view class="register-item">
+    <image src='/images/username.png'></image><input type='text' placeholder='姓名' bindinput='bindUserNameInput' value="{{username}}"></input>
+  </view>
+  <view class="register-item">
+    <image src='/images/mobile.png'></image><input type='text' placeholder='手机号' bindblur='bindMobileInput' value="{{mobile}}"></input>
+  </view>
+  <view class="register-item">
+    <image src='/images/plate.png'></image><input type='text' placeholder='车牌号 如：粤A123456' bindinput='bindPlateInput' value="{{plate}}" ></input>
+  </view>
+  <view class="register-item">
+    <image src='/images/motorcycle.png'></image>
+    <picker range="{{motorcycle}}" range-key="displayValueCn" value="motorcyclevalue" bindchange="bindMotorcycleInput">
+    <view class="picker">
+      车型：{{motorcycle[motorcyclevalue].displayValueCn}}
+    </view>
+    </picker>
+  </view>
+  <view class="register-item">
+    <image src='/images/warehouse.png'></image>
+    <picker range="{{warehouse}}" range-key="warehouseName" value="warehousevalue" bindchange="bindPickerChange">
+    <view class="picker">
+      仓库：{{warehouse[warehousevalue].warehouseName}}
+    </view>
+    </picker>
+  </view>
+  <button type="primary" class='btn' bindtap="submit">提交</button>
+  <view class="footer">
+    Powered by 初家心选
+  </view>
+</view>

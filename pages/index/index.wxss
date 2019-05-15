@@ -1,0 +1,84 @@
+/**index.wxss**/
+.header-image {
+  margin-top: 10px;
+}
+.header-image .logo {
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+}
+.header-text {
+  font-size: 18px;
+}
+.user-motto {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 40rpx;
+  justify-content: flex-start;
+}
+.user-motto .user-image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: block;
+}
+.user-motto .user-nick-name {
+  overflow: hidden;
+  display: block;
+  margin-left: 10px; 
+}
+.userinfo {
+  margin-top: 40rpx;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.userinfo-avatar {
+  width: 148rpx;
+  height: 148rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}
+.delivery {
+  height: 160px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  margin-top: 15px;
+}
+.userInfo {
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  margin-top: 15px;
+  position: relative;
+}
+.userInfo .arrow-image {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: #515151;
+}

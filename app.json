@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/collect/collect",
+    "pages/service/service",
+    "pages/finish/finish",
+    "pages/register/register"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "初家鲜配",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#FFFFFF",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#6e6d6b",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/collect/collect",
+        "iconPath": "images/footer-icon-01.png",
+        "selectedIconPath": "images/footer-icon-01-active.png",
+        "text": "揽收"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "iconPath": "images/footer-icon-02.png",
+        "selectedIconPath": "images/footer-icon-02-active.png",
+        "text": "送达"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/footer-icon-03.png",
+        "selectedIconPath": "images/footer-icon-03-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

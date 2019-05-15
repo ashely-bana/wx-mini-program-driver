@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">司机揽收</view>
+  <view class="register-item">
+    <input type='text' placeholder='扫描/录入交接单号' bindconfirm='bindScanCodeInput' value="{{scanCode}}"></input><image src='/images/scan.png' bindtap='scan'></image>
+  </view>
+  <view class="outer-wrap">
+    <view class='collect-list-wrapper'>
+      <view class="collect-no-data" wx:if="{{collectList.length == 0}}">
+      没有数据
+      </view>
+      <view class="collect-list" wx:for="{{collectList}}" wx:key="deliveryNo" wx:for-item="item">
+        <view class='collect-item' data-idx="{{index}}" bindtap='showDetail' bindlongpress='longTap'>
+          <view class="service-item first">
+            <text class='item-first'>{{item.deliveryNo}}</text>
+            <text>{{item.warehouseName}}-{{item.routeName}}</text>
+          </view>
+          <view class="service-item">
+            <text class='item-first'>团长：{{item.groupCount}}</text>
+            <text>商品：{{item.goodCount}}</text>
+          </view>
+        </view>
+        <view class="collect-detail" style="display:{{detailDisplayList[index]}};">
+          <view class='collect-detail-item'>
+            <view class='th'>团长</view>
+            <view class='th large'>配送地址</view>
+            <view class='th'>商品</view>
+          </view>
+          <view class='collect-detail-item' wx:for="{{collectDetailList}}" wx:key="id">
+            <view class='td'>{{item.groupLeaderName}}</view>
+            <view class='td large'>{{item.address}}</view>
+            <view class='td'>{{item.goodCount}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <button type="primary" class='btn' bindtap="sureDepart" wx:if="{{collectList.length > 0}}">确认发车</button>
+    <text>Powered by 初家心选</text>
+  </view>
+</view>

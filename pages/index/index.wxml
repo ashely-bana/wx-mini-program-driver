@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header-image">
+    <image class='logo' src='../../images/logo.png'></image>
+  </view>
+  <view class="header-text">
+    <text>初家鲜配TMS</text>
+  </view>
+  <!-- <view class="user-motto">
+    <open-data class='user-image' type="userAvatarUrl"></open-data>
+    <open-data class='user-nick-name' type="userNickName"></open-data>
+  </view> -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="delivery">
+    <canvas canvas-id="canvas" class="canvas" bindtouchend="canvasOnClick"></canvas>
+  </view>
+  <view class="userInfo" bindtap='goToRegister'>
+    <!-- <navigator
+      url="/pages/register/register"
+    > -->
+      注册/修改司机信息 <image src='../../images/arrow.png' class='arrow-image'></image>
+    <!-- </navigator> -->
+  </view>
+  <view class="footer">
+    Powered by 初家心选
+  </view>
+</view>
